@@ -1,0 +1,342 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Mono';
+    background-color: grey;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+a, p {
+    font-size: 22px;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.about-section {
+    height: 100%;
+    text-align: center;
+    padding-top: 60px;
+    background-color: silver;
+}
+
+.explicacion-section {
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    background-color: grey;
+}
+
+.right {
+    margin-right: 2%;
+    float: right;
+    line-height: 65px;
+    font-weight: bold;
+    color: black;
+}
+
+.left {
+    float: left;
+    line-height: 65px;
+    font-weight: bold;
+    color: black;
+}
+
+.explicacion-section .container {
+    border: 4px solid black;
+    margin-top: 2.5%;
+    padding: 10px;
+}
+
+/* Gallery Styles*/
+.image {
+    position:relative;
+    float:left;
+    overflow: hidden;
+    width: 380px;
+    height: 240px;
+    margin-top: 1em;
+}
+
+.about-section .image img {
+    width: 380px;
+    height: 240px;
+    position: relative;
+
+}
+
+.galleryTitle {
+    float:left;
+    position:absolute;
+    background:#000;
+    height: 240px;
+    line-height: 200px;
+    width: 380px;
+    padding: 20px;
+    opacity: 0.4;
+    top: 240px;
+    color: white;
+    font-size:18px;
+    z-index:10;
+    text-align: center;
+}
+
+/* Pop-up */
+
+.window {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: grey;
+    opacity: 0.6;
+}
+
+.closeWindow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 116%;
+    left: 77%;
+    cursor: pointer;
+}
+
+.expandWindow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 116%;
+    left: 23%;
+    cursor: pointer; 
+}
+
+.description {
+    border: 3px solid black;
+    position: absolute;
+    width: 766px;
+    height: 550px;
+    top: 115%;
+    left: 22%;
+}
+
+.bigTitle {
+    text-align: center;
+    width: 760px;
+    z-index: 10;
+    position: absolute;
+    top: 480px;
+    line-height: 64px;
+    background-color: black;
+    color: white;
+}
+
+.bigImage {
+    width: 760px;
+    height: 480px;
+}
+
+.btn-silver { 
+  color: #ffffff; 
+  background-color: silver; 
+  border-color: silver; 
+} 
+ 
+.btn-silver:hover, 
+.btn-silver:focus, 
+.btn-silver:active, 
+.btn-silver.active, 
+.open .dropdown-toggle.btn-silver { 
+  color: #ffffff; 
+  background-color: #575757; 
+  border-color: #575757; 
+} 
+ 
+.btn-silver:active, 
+.btn-silver.active, 
+.open .dropdown-toggle.btn-silver { 
+  background-image: none; 
+} 
+ 
+.btn-silver.disabled, 
+.btn-silver[disabled], 
+fieldset[disabled] .btn-silver, 
+.btn-silver.disabled:hover, 
+.btn-silver[disabled]:hover, 
+fieldset[disabled] .btn-silver:hover, 
+.btn-silver.disabled:focus, 
+.btn-silver[disabled]:focus, 
+fieldset[disabled] .btn-silver:focus, 
+.btn-silver.disabled:active, 
+.btn-silver[disabled]:active, 
+fieldset[disabled] .btn-silver:active, 
+.btn-silver.disabled.active, 
+.btn-silver[disabled].active, 
+fieldset[disabled] .btn-silver.active { 
+  background-color: #611BBD; 
+  border-color: #130269; 
+} 
+ 
+.btn-silver .badge { 
+  color: #611BBD; 
+  background-color: #ffffff; 
+}
+
+i {
+    padding-top: 4px; 
+}
+
+ol {
+    padding-top: 5px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+li {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.markup {
+    margin-top: 5px;
+    width: 40%;
+    float: left;
+}
+
+.style-left {
+    float: left;
+    width: 50%;
+    margin-top: 2%; 
+    text-align: left;
+    font-size: 18px;
+}
+
+.style-bootstrap {
+    float: left;
+    width: 50%;
+    margin-top: 2%; 
+    text-align: left;
+    font-size: 18px;
+}
+
+.style-gallery {
+    position: absolute;
+    margin-top: 9%; 
+    float: left;
+    margin-left: 47%;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.bootstrap {
+    margin-top: 1%;
+    width: 500px;
+    float: left;
+    margin-left: 10%;
+}
+
+.gallery {
+    margin-top: 5%; 
+    width: 45%;
+    margin-left: 4.9%;
+    overflow: hidden;
+    margin-bottom: 1%; 
+}
+
+.style-jquery {
+    margin-top: 10%; 
+    text-align: left;
+    font-size: 18px;
+}
+
+.jquery {
+    margin-top: 1%; 
+    float: left;
+    margin-left: 12%;
+}
+
+.style-js {
+    position: absolute;
+    float: left;
+    margin-top: 1%; 
+    margin-left: 47%;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.js {
+    margin-top: 4%;
+    width: 500px;
+    float: left;
+    margin-left: 10%;
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: grey;
+    color: #eeeeee;
+    width: 40px;
+    height: 40px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 20px;
+    padding-top: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+    background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
